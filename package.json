@@ -1,0 +1,13 @@
+{
+  "name": "api-testing",
+  "scripts": {
+    "prettier-check": "prettier --check ./**/*.{js,json}",
+    "prettier-format": "prettier --write ./**/*.{js,json}"
+  },
+  "devDependencies": {
+    "cypress": "^15.0.0"
+  },
+  "dependencies": {
+    "prettier": "^3.6.2"
+  }
+}
