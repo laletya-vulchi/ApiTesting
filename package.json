@@ -1,13 +1,21 @@
 {
-  "name": "api-testing",
-  "scripts": {
-    "prettier-check": "prettier --check ./**/*.{js,json}",
-    "prettier-format": "prettier --write ./**/*.{js,json}"
-  },
-  "devDependencies": {
-    "cypress": "^15.0.0"
-  },
-  "dependencies": {
-    "prettier": "^3.6.2"
-  }
+    "name": "api-testing",
+    "scripts": {
+        "prettier-check": "prettier --check .*",
+        "prettier-format": "prettier --write .*"
+    },
+    "devDependencies": {
+        "@badeball/cypress-cucumber-preprocessor": "^23.1.0",
+        "@bahmutov/cypress-esbuild-preprocessor": "^2.2.6",
+        "cypress": "^15.2.0",
+        "cypress-cucumber-preprocessor": "^4.3.1",
+        "cypress-schema-validator": "^1.0.1"
+    },
+    "dependencies": {
+        "prettier": "^3.6.2"
+    },
+    "cypress-cucumber-preprocessor": {
+        "nonGlobalStepDefinitions": true,
+        "step_definitions": "cypress/e2e/bddTesting"
+    }
 }
